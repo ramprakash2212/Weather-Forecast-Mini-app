@@ -1,0 +1,70 @@
+.header {
+    background-color: #2a2a2a;
+}
+
+.header_title {
+    font-size: 32px;
+    color: #e6e6e6;
+    font-weight: 400;
+}
+
+.city_title {
+    font-size: 28px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.city select {
+    font-size: 28px;
+    font-weight: 400;
+    background-color: #e6e6e6;
+}
+
+.weather_forecast span,
+.weather_forecast img {
+    font-size: 18px;
+    color: #2a2a2a;
+    text-align: center;
+}
+
+.weather_forecast span:nth-child(1) {
+    line-height: 20px;
+}
+
+.weather_forecast span:nth-child(1),
+.weather_forecast span:nth-child(2) {
+    font-weight: 600;
+}
+
+.close_icon {
+    position: absolute;
+    right: 27px;
+    top: 28px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.close_icon:before,
+.close_icon:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #e6e6e6;
+}
+
+.close_icon:before {
+    transform: rotate(45deg);
+}
+
+.close_icon:after {
+    transform: rotate(-45deg);
+}
+
+.form-select {    
+    background-image: url(../../assets/icons/dropdown.svg);
+    background-size: 1em;
+    background-repeat: no-repeat;
+}

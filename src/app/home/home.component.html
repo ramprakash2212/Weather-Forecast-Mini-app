@@ -1,0 +1,32 @@
+<div class="d-flex flex-column">
+    <!--Header-->
+    <div class="d-flex flex-row justify-content-between p-3 header">
+        <span class="header_title">{{weather_forecast}}</span>
+        <span class="close_icon"></span>
+    </div>
+    <!--Body-->
+    <div class="d-flex flex-column p-3 bg-white" *ngIf="weatherInfo && weatherInfo.length > 0">
+        <!--Dropdown-->
+        <div class="form-group city" *ngIf="cities && cities.length > 0">
+            <label for="city" class="city_title my-1">{{weather_city}}</label>
+            <select class="form-select form-select-lg" [(ngModel)]="selectedCity" (change)="getWeatherData()">
+                <option class="bg-white" *ngFor="let city of cities">{{city}}</option>
+            </select>
+        </div>
+        <!--Weather Information-->
+        <div class="d-flex flex-row justify-content-between p-3 m-3 weather_forecast">
+            <div *ngFor="let weather of weatherInfo;">
+                <div class="d-flex flex-column justify-content-center">
+                    <span>{{weather.valid_date | date: 'EEEE'}}</span>
+                    <span>{{weather.valid_date | date:'MMM d'}}</span>
+                    <img [src]="getImagePath(weather)">
+                    <span>{{weather.temp | number:'2.0-0'}}&#176;C</span>
+                </div>
+            </div>
+        </div>
+        <!--Button-->
+        <div class="d-flex justify-content-end weather_submit">
+            <button type="button" class="btn btn-danger btn-lg px-5 rounded-0" (click)="getWeatherData()">Apply</button>
+        </div>
+    </div>
+</div>
