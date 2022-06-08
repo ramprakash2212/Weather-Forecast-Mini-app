@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
   }
 
   /**
-   * Method is used to get weather data
+   * Method is used to get weather Information from service
    */
   public getWeatherData() {
     if (this.selectedCity) {
@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
   }
 
   /**
-   * Method is used to get six days weather data
+   * Method is used to collect weather Data
    * @param weatherData 
    * @returns 
    */
@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
   }
   
   /**
-   * Method is used to collect image path
+   * Method is used to concatenate weather image using image path
    * @param args 
    * @returns 
    */

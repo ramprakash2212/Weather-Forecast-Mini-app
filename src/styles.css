@@ -3,10 +3,12 @@
     font-family: 'Open Sans Regular';
     src: url(assets/fonts/OpenSans-Regular.ttf) format('truetype');
 }
+
 @font-face {
     font-family: 'Open Sans Bold';
     src: url(assets/fonts/OpenSans-Bold.ttf) format('truetype');
 }
-body{
+
+body {
     font-family: 'Open Sans Regular';
 }
