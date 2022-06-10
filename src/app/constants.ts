@@ -10,6 +10,6 @@ export const weatherConstants = {
     IMAGE_PATH: "../../assets/icons/"
 }
 
-export const weatherCities = ['Calgary', 'Hamilton', 'Edmonton', 'Montreal', 'Ottawa', 'Toronto'];
+export const weatherCities = ['Calgary', 'Edmonton', 'Hamilton', 'Montreal', 'Ottawa', 'Toronto'];
 
 
